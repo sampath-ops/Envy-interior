@@ -1,3 +1,4 @@
+
 const AboutUs = () => {
     return ( 
         <div className="mx-36 my-20 grid grid-cols-2">
@@ -5,7 +6,7 @@ const AboutUs = () => {
                 <p className="text-[#3aba93] font-semibold pb-4 text-[24px]">AboutUs</p>
                 <p className="font-medium text-2xl pb-4">Simple Minimalist For Your Home Interior</p>
                 <div className="pb-6">
-                    <img src="" alt="" />
+                    {/* <img src="" alt="" /> */}
                     <p className="text-[14px] text-gray-700">We're in this business <span className="text-[#3aba93]">since 2015</span> and We provide the best services</p>
                 </div>
                 <p className="text-gray-700 w-[90%] text-justify leading-5 pb-4">Welcome to our Interior Design Studio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo a id iste, dolore dolor sunt aliquam maxime accusantium totam similique odit ipsa, mollitia ad recusandae reprehenderit. Iusto perspiciatis ipsa doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
