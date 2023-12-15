@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 const AboutUs = () => {
     return ( 
@@ -12,9 +13,23 @@ const AboutUs = () => {
                 <p className="text-gray-700 w-[90%] text-justify leading-5 pb-4">Welcome to our Interior Design Studio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo a id iste, dolore dolor sunt aliquam maxime accusantium totam similique odit ipsa, mollitia ad recusandae reprehenderit. Iusto perspiciatis ipsa doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button className="bg-[#3aba93] p-2 px-6 text-white rounded-lg font-medium my-2">Read More</button>
             </div>
-            <div className="grid grid-cols-2 items-end">
-                <img src="./images/sofa-about2.jpg" alt="sofa" className="rounded-xl relative right-[-90px]"/>
-                <img src="./images/sofa-about1.jpg" alt="sofa" className= "rounded-xl h-[400px]  w-[95%]"/> 
+            <div className="grid grid-cols-2 items-end relative">
+                <div className="relative h-[80%] right-[-60px] z-10">
+                    <Image
+                        src={"/images/sofa-about2.jpg"}
+                        alt="sofa"
+                        fill
+                        className="rounded-xl"
+                    />
+                </div>
+                <div className="relative h-[400px]  w-[95%]">
+                    <Image
+                        src={"/images/sofa-about1.jpg"}
+                        alt="sofa"
+                        fill
+                        className="rounded-xl"
+                    />
+                </div>
             </div>
         </div>
      );
